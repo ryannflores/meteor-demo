@@ -1,0 +1,18 @@
+<template name="HomeTemplate">
+    <main>
+        <div class="center" style="margin-top:100px;">
+            <p><button class="btn btn-primary btn-submit">Send</button></p>
+            ---------- Template.Helper::Object ----------
+            <p>{{getProfile.name}}</p>
+            <p>{{getProfile.company}}</p>
+            <br><br>
+            ---------- Template.Helper::Array ----------
+            <table>
+                {{#each getContacts}}
+                    <p>Name: {{name}}</p>
+                    <p>Company: {{company}}</p>
+                {{/each}}
+            </table>
+        </div>
+    </main>
+</template>

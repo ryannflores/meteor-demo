@@ -1,0 +1,12 @@
+<template name="MainLayout">
+	{{> HeaderTemplate}}
+	{{> SideNavTemplate}}
+	<main>
+		{{> Template.dynamic template=main}}
+	</main>
+    <footer>
+        <div class="footer">
+            This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.
+        </div>
+    </footer>
+</template>
