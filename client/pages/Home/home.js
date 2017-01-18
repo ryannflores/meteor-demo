@@ -6,7 +6,11 @@ Template.HomeTemplate.onCreated(function () {
 });
 
 Template.HomeTemplate.helpers({
+    getProfileSingleString: function () {
+        return 'Adrian Castro';
+    },
     getProfile: function () {
+        console.log('test');
         return { name: 'Ryann Flores', company: 'Idigital Enterprises Inc.' };
     },
     getContacts: function () {
